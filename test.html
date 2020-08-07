@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title> 蒋双隆0708 </title>
+  <link rel="stylesheet" href="./reset/reset.css">
+  <link rel="stylesheet" href="test.css">
+  <link rel="stylesheet" href="font-awesome/css/all.css">
+  <script src="./jquery-1.8.3/jquery-1.8.3.min.js"></script>
+</head>
+
+<body>
+  <div class="top-wrap clearfix">
+    <!-- alignCenter用作居中 、select用于显示下选框-->
+    <div class="top alignCenter">
+      <div class="top-left select">
+        <i class="fas fa-map-marker-alt"></i>
+        <a href="#" class="addresstit">北京</a>
+        <!-- 地址子选框的二级菜单 -->
+        <div class="subnavleft">
+          <div class="subnavleftmain clearfix">
+            <!-- 地址子选框的二级菜单-----1.地址部分 -->
+            <div class="subnav-address">
+              <div><a href="#">北京</a></div>
+              <div><a href="#">上海</a></div>
+              <div><a href="#">天津</a></div>
+              <div><a href="#">重庆</a></div>
+              <div><a href="#">河北</a></div>
+              <div><a href="#">山西</a></div>
+              <div><a href="#">河南</a></div>
+              <div><a href="#">辽宁</a></div>
+              <div><a href="#">吉林</a></div>
+              <div><a href="#">黑龙江</a></div>
+              <div><a href="#">内蒙古</a></div>
+              <div><a href="#">江苏</a></div>
+              <div><a href="#">山东</a></div>
+              <div><a href="#">安徽</a></div>
+              <div><a href="#">浙江</a></div>
+              <div><a href="#">福建</a></div>
+              <div><a href="#">湖北</a></div>
+              <div><a href="#">湖南</a></div>
+              <div><a href="#">广东</a></div>
+              <div><a href="#">广西</a></div>
+              <div><a href="#">江西</a></div>
+              <div><a href="#">四川</a></div>
+              <div><a href="#">海南</a></div>
+              <div><a href="#">贵州</a></div>
+              <div><a href="#">云南</a></div>
+              <div><a href="#">西藏</a></div>
+              <div><a href="#">陕西</a></div>
+              <div><a href="#">甘肃</a></div>
+              <div><a href="#">青海</a></div>
+              <div><a href="#">宁夏</a></div>
+              <div><a href="#">新疆</a></div>
+              <div><a href="#">港澳</a></div>
+              <div><a href="#">台湾</a></div>
+              <div><a href="#">钓鱼岛</a></div>
+              <div><a href="#">海外</a></div>
+            </div>
+            <div class="opaline"></div>
+            <div class="subnav-specialadd">
+              <div class="spec clearfix">
+                <p>地区专享版本</p>
+                <ul>
+                  <li>
+                    <a href="">中國港澳</a>
+                  </li>
+                  <li>
+                    <a href="">中國台灣</a>
+                  </li>
+                  <li>
+                    <a href="">京东全球</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="opaline"></div>
+              <div class="spec clearfix">
+                <p>地区专享版本</p>
+                <ul>
+                  <li>
+                    <i class="areamini_inter_ico areamini_inter_ico_global"></i>
+                    <a href="">中國港澳</a>
+                  </li>
+                  <li>
+                    <a href="">中國台灣</a>
+                  </li>
+                  <li>
+                    <a href="">京东全球</a>
+                  </li>
+                  <li>
+                    <a href="">中國台灣</a>
+                  </li>
+                  <li>
+                    <a href="">京东全球</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="top-right clearfix">
+        <li class="top-right-content">
+          <a href="#">你好，请登录</a>
+          <a href="#" class="top-right-register content-red">免费注册</a>
+        </li>
+        <li class="top-right-line"></li>
+        <li class="top-right-content"><a href="#">我的订单</a></li>
+        <li class="top-right-line"></li>
+
+        <li class="top-right-content select">
+          <a href="#">我的京东</a>
+          <i class="fas fa-angle-down"></i>
+          <div class="subnav-myjd">
+          </div>
+        </li>
+        <li class="top-right-line"></li>
+        <li class="top-right-content"><a href="#">京东会员</a></li>
+        <li class="top-right-line"></li>
+        <li class="top-right-content select">
+          <a href="#">企业采购</a>
+          <i class="fas fa-angle-down"></i>
+          <div class="subnav-companybuy">
+          </div>
+        </li>
+        <li class="top-right-line"></li>
+        <li class="top-right-content select">
+          <a href="#" class="content-red">客户服务</a>
+          <i class="fas fa-angle-down"></i>
+          <div class="subnav-cusservice">
+          </div>
+        </li>
+        <li class="top-right-line"></li>
+        <li class="top-right-content select">
+          <a href="#">网站导航</a>
+          <i class="fas fa-angle-down"></i>
+          <div class="subnav-nethref">
+          </div>
+        </li>
+        <li class="top-right-line"></li>
+        <li class="top-right-content select">
+          <a href="#">手机京东</a>
+          <div class="subnav-phonejd"></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="header-wrap clearfix">
+    <div class="header alignCenter">
+      <div class="header-left"></div>
+
+      <div class="header-center">
+        <div class="header-center-line1">
+          <div class="line1-inp">
+            <input type="text" name="" id="" class="jdsearch">
+            <i class="fa fa-camera" aria-hidden="true"></i>
+            <span>
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </span>
+            <!-- 欠缺了一个hover效果 -->
+
+            <ul class="jdsearch-tips">
+              <li>
+                <div class="search-item">法师都护府</div>
+                <div class="search-count">123</div>
+              </li>
+              <li>
+                <div class="search-item">法师都护府</div>
+                <div class="search-count">123</div>
+              </li>
+              <li>
+                <div class="search-item">法师都护府</div>
+                <div class="search-count">123</div>
+              </li>
+
+            </ul>
+
+          </div>
+          <div class="line1-buycar">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <span class="buycar-num">0</span>
+            <span class="buycar-des">我的购物车</span>
+          </div>
+        </div>
+
+        <div class="header-center-line2">
+          <ul class="line2-ul">
+            <li><a href="#" class="line2-red"> 低至5件5折</a></li>
+            <li><a href="#">88购物节</a></li>
+            <li><a href="#">车主福利</a></li>
+            <li><a href="#">兰蔻</a></li>
+            <li><a href="#">领5折券</a></li>
+            <li><a href="#">电脑数码</a></li>
+            <li><a href="#">文具大赏</a></li>
+            <li><a href="#">奶爸盛典</a></li>
+            <li><a href="#">美的新品</a></li>
+          </ul>
+        </div>
+        <div class="header-center-line3">
+          <ul class="line3-ul">
+            <li><a href="#" class="line3-red">秒杀</a></li>
+            <li><a href="#" class="line3-red">优惠价</a></li>
+            <li><a href="#">PLUS会员</a></li>
+            <li><a href="#">品牌闪购</a></li>
+            <li><a href="#">拍卖</a></li>
+            <li><a href="#">京东家电</a></li>
+            <li><a href="#">京东超市</a></li>
+            <li><a href="#">京东生鲜</a></li>
+            <li><a href="#">京东国际</a></li>
+            <li><a href="#">京东金融</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="header-right"> </div>
+    </div>
+  </div>
+  <div class="home-wrap clearfix">
+    <div class="home alignCenter">
+      <div class="home-menu">
+        <ul class="home-menu-ul">
+          <li><a href="">家用电器</a></li>
+          <li>
+            <a href="">手机</a>
+            <span>/</span>
+            <a href="">运营商</a>
+            <span>/</span>
+            <a href="">数码</a>
+          </li>
+          <li>
+            <a href="">电脑</a>
+            <span>/</span>
+            <a href="">办公</a>
+          </li>
+          <li>
+            <a href="">家具</a>
+            <span>/</span>
+            <a href="">家居</a>
+            <span>/</span>
+            <a href="">家装</a>
+            <span>/</span>
+            <a href="">厨具</a>
+          </li>
+          <li>
+            <a href="">男装</a>
+            <span>/</span>
+            <a href="">女装</a>
+            <span>/</span>
+            <a href="">童装</a>
+            <span>/</span>
+            <a href="">内衣</a>
+          </li>
+          <li>
+            <a href="">美妆</a>
+            <span>/</span>
+            <a href="">个护清洁</a>
+            <span>/</span>
+            <a href="">宠物</a>
+          </li>
+
+          <li>
+            <a href="">女鞋</a>
+            <span>/</span>
+            <a href="">箱包</a>
+            <span>/</span>
+            <a href="">钟表</a>
+            <span>/</span>
+            <a href="">珠宝</a>
+          </li>
+          <li>
+            <a href="">男鞋</a>
+            <span>/</span>
+            <a href="">运动</a>
+            <span>/</span>
+            <a href="">户外</a>
+          </li>
+          <li>
+            <a href="">房产</a>
+            <span>/</span>
+            <a href="">汽车</a>
+            <span>/</span>
+            <a href="">汽车用品</a>
+          </li>
+          <li>
+            <a href="">母婴</a>
+            <span>/</span>
+            <a href="">玩具乐器</a>
+          </li>
+
+          <li>
+            <a href="">食品</a>
+            <span>/</span>
+            <a href="">酒类</a>
+            <span>/</span>
+            <a href="">生鲜</a>
+            <span>/</span>
+            <a href="">特产</a>
+          </li>
+          <li>
+            <a href="">艺术</a>
+            <span>/</span>
+            <a href="">礼品鲜花</a>
+            <span>/</span>
+            <a href="">农资绿植</a>
+          </li>
+          <li>
+            <a href="">医药保健</a>
+            <span>/</span>
+            <a href="">计生情趣</a>
+          </li>
+          <li>
+            <a href="">图书</a>
+            <span>/</span>
+            <a href="">文娱</a>
+            <span>/</span>
+            <a href="">教育</a>
+            <span>/</span>
+            <a href="">电子书</a>
+          </li>
+
+          <li>
+            <a href="">机票</a>
+            <span>/</span>
+            <a href="">酒店</a>
+            <span>/</span>
+            <a href="">旅游</a>
+            <span>/</span>
+            <a href="">生活</a>
+          </li>
+          <li>
+            <a href="">理财</a>
+            <span>/</span>
+            <a href="">众筹</a>
+            <span>/</span>
+            <a href="">白条</a>
+            <span>/</span>
+            <a href="">保险</a>
+          </li>
+
+          <li>
+            <a href="">安装</a>
+            <span>/</span>
+            <a href="">维修</a>
+            <span>/</span>
+            <a href="">清洗</a>
+            <span>/</span>
+            <a href="">二手</a>
+          </li>
+          <li>
+            <a href="">工业品</a>
+          </li>
+
+        </ul>
+        <div class="home-menu-detail"></div>
+      </div>
+      <div class="home-bbanner">
+        <div class="home-bbanner-window">
+          <ul class="home-bbanner-ul">
+            <li>
+              <a href="#"><img src="./banners/ (1).webp" alt="bbanner"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./banners/ (2).webp" alt="bbanner"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./banners/ (3).webp" alt="bbanner"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./banners/ (4).webp" alt="bbanner"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./banners/ (5).webp" alt="bbanner"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./banners/ (6).webp" alt="bbanner"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./banners/ (7).webp" alt="bbanner"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./banners/ (8).webp" alt="bbanner"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./banners/ (1).webp" alt="bbanner"></a>
+            </li>   
+          </ul>
+        </div>
+        <div class="bbanner-left">
+          <i class="fa fa-chevron-left bbanner-anti-i" aria-hidden="true"></i>
+        </div>
+        <div class="bbanner-right">
+          <i class="fa fa-chevron-right bbanner-anti-i" aria-hidden="true"></i>
+        </div>
+        <div class="bbanner-bottom">
+          <ul class="bbanner-bottom-ul">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <div class="home-sbanner"></div>
+      <div class="home-logreg"></div>
+    </div>
+  </div>
+  <script>
+
+  </script>
+  <script src="./test.js"></script>
+</body>
+
+</html>
