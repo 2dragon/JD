@@ -513,16 +513,112 @@
   float: left;
   margin-right: 4px;
 }
-/* .bbanner-bottom-ul li:hover {
-  width: 9px;
-  height: 9px;
-  border: 3px solid rgba(255, 255, 255, 0.05);
-  background-color: rgba(255, 255, 255);
-} */
-/* 小店的样式 */
-.bbanner-bottom-ul .bbanner-bottom-ul-active{
+.bbanner-bottom-ul li:hover {
+  cursor: pointer;
+}
+/* 小dot的样式 */
+.bbanner-bottom-ul .bbanner-bottom-ul-active {
   width: 9px;
   height: 9px;
   border: 3px solid rgba(255, 255, 255, 0.1);
   margin-top: -3px;
+}
+
+/* 小banner图部分 */
+.home-sbanner {
+  width: 190px;
+  height: 470px;
+  float: left;
+  margin-left: 10px;
+}
+.home-sbanner:hover .show-sbanner {
+  display: block;
+}
+.home-sbanner-window {
+  width: 190px;
+  height: 470px;
+  position: relative;
+}
+.home-sbanner-ul {
+  width: 2000px;
+  height: 470px;
+}
+.home-sbanner-ul li {
+  width: 190px;
+  height: 470px;
+  float: left;
+}
+.home-sbanner-ul li a {
+  width: 190px;
+  height: 150px;
+  display: block;
+  margin-bottom: 10px;
+}
+.home-sbanner-ul li a div {
+  width: 190px;
+  height: 150px;
+  position: absolute;
+}
+.home-sbanner-ul li a img {
+  width: 190px;
+  height: 150px;
+}
+/* 左右图标 */
+.sbanner-left {
+  width: 25px;
+  height: 35px;
+  position: absolute;
+  left: 0px;
+  top: 200px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0 20px 20px 0;
+  z-index: 100;
+}
+
+.sbanner-right {
+  width: 25px;
+  height: 35px;
+  position: absolute;
+  right: 0px;
+  top: 200px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20px 0 0 20px;
+  z-index: 100;
+}
+.sbanner-anti-i {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #fff;
+}
+.sbanner-left i {
+  margin-left: 3px;
+}
+.sbanner-right i {
+  float: right;
+  margin-right: 3px;
+}
+.show-sbanner {
+  display: none;
+}
+/* 最后一个啦header */
+.home-logreg {
+  width: 190px;
+  height: 470px;
+  float: left;
+  margin-left: 10px;
+  background-color: #fff;
+}
+
+/* 第三部分33333333333 */
+.seckill-wrap {
+  width: 100%;
+  background-color: #eee;
+  
+}
+.seckill {
+  width: 1190px;
+  height: 260px;
+  background-color: #fff;
+  margin-top: 10px;
+  margin-bottom: 1000px;
 }

@@ -64,6 +64,8 @@ var curindex = 0;
 var imgwidth = Math.ceil($(".home-bbanner-ul li").eq(0).width());
 $(".home-bbanner-ul li a img").eq(0).css("opacity", 1);
 
+$(".bbanner-bottom-ul li").eq(0).addClass("bbanner-bottom-ul-active");
+
 function dotstyle() {
   var cur = curindex;
   var pre = preindex;
@@ -124,7 +126,30 @@ function moveprev() {
   dotstyle();
   preindex = curindex;
 }
+function moveto(index) {
+  //选择某一页面
+  curindex = index;
+  if (curindex >= $(".home-bbanner-ul li").length) {
+    $(".home-bbanner-window").scrollLeft(0);
+    curindex = 1;
+  }
+  $(".home-bbanner-ul li a img").eq(preindex).animate(
+    {
+      opacity: 0.2,
+    },
+    400
+  );
 
+  $(".home-bbanner-ul li a img").eq(curindex).animate(
+    {
+      opacity: 1,
+    },
+    400
+  );
+  $(".home-bbanner-window").scrollLeft(imgwidth * curindex);
+  dotstyle();
+  preindex = curindex;
+}
 timer = setInterval(movenext, 3000);
 
 $(".home-bbanner").on("mouseenter", function () {
@@ -138,4 +163,28 @@ $(".bbanner-right").on("click", function () {
 });
 $(".home-bbanner").on("mouseleave", function () {
   timer = setInterval(movenext, 3000);
+});
+$(".bbanner-bottom-ul").on("mouseenter", "li", function () {
+  console.log($(this).index());
+  moveto($(this).index());
+});
+
+// 用swiper的方式实现小的滑动
+var mySwiper = new Swiper(".swiper-container", {
+  direction: "horizontal", // 垂直切换选项
+  loop: true, // 循环模式选项
+  effect: "fade", //效果
+  autoplay: true, //自动3s
+  // 如果需要前进后退按钮
+  navigation: {
+    nextEl: ".sbanner-left",
+    prevEl: ".sbanner-right",
+  },
+});
+
+$(".swiper-wrapper li a").on("mouseenter","div", function () {
+  $(this).css('background','rgba(255,255,255,0.2)');
+});
+$(".swiper-wrapper li a").on("mouseleave","div", function () {
+  $(this).css('background','rgba(255,255,255,0)');
 });
